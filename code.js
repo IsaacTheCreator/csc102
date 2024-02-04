@@ -18,9 +18,9 @@ function playCraps() {
     let sum = die1 + die2;
 
     // This would determine the outcome based on the rules of Craps
-    if (sum === 7 || sum === 11) {
+    if (sum == 7 || sum == 11) {
         document.getElementById("resultMessage").innerHTML = "CRAPS - You lose!";
-    } else if (die1 === die2 && die1 % 2 === 0) {
+    } else if (die1 == die2 && die1 % 2 == 0) {
         document.getElementById("resultMessage").innerHTML = "You won!";
     } else {
         document.getElementById("resultMessage").innerHTML = "You pushed!";
